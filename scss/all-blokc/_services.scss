@@ -1,0 +1,150 @@
+.services {
+   position: relative;
+
+   .hr {
+      hr {
+         width: 974px;
+         height: 12px;
+         background-color: $blue;
+         border: none;
+         position: absolute;
+         left: 0;
+         top: 32px;
+         z-index: -1;
+      }
+   }
+
+   &__cards {
+      gap: 20px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      margin-top: 160px;
+
+      .card {
+         max-width: 350px;
+
+         &__title--text {
+            font-size: 24px;
+            margin: 0;
+            line-height: 28px;
+            padding: 40px 0 27px 0;
+            letter-spacing: -1.07px;
+         }
+
+         &__desc--text {
+            color: $grey;
+            font-size: 15px;
+            line-height: 25px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1351px) {
+   .services {
+      hr {
+         width: 70% !important;
+      }
+   }
+}
+
+@media screen and (max-width: 810px) {
+   .services {
+
+      .hr {
+         hr {
+            height: 700px;
+            max-width: 12px;
+            background-color: $blue;
+            border: none;
+            position: absolute;
+            left: 80px;
+            top: -180px;
+            z-index: -1;
+         }
+      }
+
+      &__cards {
+         display: grid;
+         grid-template-columns: auto !important;
+
+         .card {
+            max-width: 720px !important;
+            display: flex;
+            margin-top: 50px;
+            align-items: center;
+
+            img {
+               width: 96px;
+               margin-right: 79px;
+            }
+
+            &__title--text {
+               margin: 0;
+               padding: 0;
+               margin-bottom: 20px;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 627px) {
+   .services {
+      .hr {
+         hr {
+            height: 800px;
+            bottom: 0;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 530px) {
+   .services {
+      .card {
+         img {
+            margin-right: 30px;
+         }
+
+         &__title--text {
+            font-size: 20px;
+         }
+
+         &__desc--text {
+            font-size: 15px;
+
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 451px) {
+   .services {
+      .hr {
+         hr {
+            height: 850px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 430px) {
+   .services {
+
+      .hr {
+         display: none;
+      }
+
+      &__cards {
+         .card {
+            text-align: center;
+            display: block;
+         }
+
+         .card__title--text {
+            padding: 20px 0;
+         }
+      }
+   }
+}
