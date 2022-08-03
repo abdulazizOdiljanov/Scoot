@@ -4,6 +4,11 @@ html {
     box-sizing :border-box;
 }
 
+* {
+    font-family: 'Lexend Deca';
+    transition: all 0.2s;
+}
+
 *,
 *::before,
 *::after {
@@ -25,4 +30,13 @@ img {
     max-width: 100%;
     height: auto;
     vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 , h3 {
+    font-family: 'Space Mono';
+    color: $pirple;
 }

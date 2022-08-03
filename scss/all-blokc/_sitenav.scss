@@ -1,0 +1,56 @@
+.navbar {
+   &__list {
+      display: flex;
+      list-style: none;
+      align-items: center;
+
+      .navbar__item {
+         margin-left: 32px;
+
+         &--linc {
+            color: $grey;
+            font-size: 15px;
+
+            &:hover {
+               color: $black;
+            }
+         }
+
+         &:nth-child(1) {
+            margin-left: 50px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .navbar {
+
+      &__list .navbar__item:nth-child(1) {
+         margin-left: 0px;
+      }
+
+      .navbar__item {
+         margin-left: 20px;
+
+         a {
+            font-size: 14px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 620px) {
+   .header__container {
+
+      .navbar {
+         &__list {
+            display: none;
+         }
+      }
+
+      .header__btns {
+            display: none;
+      }
+   }
+}

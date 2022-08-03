@@ -1,0 +1,42 @@
+.header__container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+
+   .header__logo {
+      display: flex;
+      align-items: center;
+
+      &--img {
+         height: 28.56px;
+         max-width: 107.82px;
+      }
+   }
+
+   .hamburger {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 620px) {
+
+   .header__container {
+
+      .header__logo {
+         margin: 0 auto;
+      }
+
+      .hamburger {
+         display: block;
+         position: absolute;
+
+         div {
+            width: 19px;
+            margin-top: 2.5px;
+            height: 3.5px;
+            background-color: $yellow;
+         }
+      }
+   }
+}
