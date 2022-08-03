@@ -386,8 +386,14 @@ h2, h3 {
 
 .container {
   width: 100%;
-  max-width: 1157px;
+  max-width: 1150px;
   margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 1440px;
   padding: 0 20px;
 }
 
@@ -747,5 +753,68 @@ h2, h3 {
   }
   .services__cards .card__title--text {
     padding: 20px 0;
+  }
+}
+.comments .card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+  align-items: center;
+}
+.comments .card .first {
+  display: none;
+}
+.comments .card .card__desc--text {
+  padding: 24px 0;
+  max-width: 445px;
+  color: #495567;
+}
+.comments .card .card__title--text {
+  font-size: 48px;
+  line-height: 48px;
+  max-width: 490px;
+}
+.comments .card img {
+  width: 550px;
+}
+
+@media screen and (max-width: 1100px) {
+  .comments .card__title--text {
+    letter-spacing: -2px !important;
+    font-size: 30px !important;
+  }
+  .comments .card__desc--text {
+    font-size: 14px !important;
+    padding: 10px 0 !important;
+  }
+  .comments .card img {
+    width: 450px !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .comments .card {
+    display: block;
+    text-align: center;
+    align-items: center;
+  }
+  .comments .card p,
+.comments .card h2 {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .comments .card img {
+    display: none;
+  }
+  .comments .card .first {
+    display: inline-block;
+  }
+  .comments .card h2 {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .comments .card__title--text {
+    font-size: 22px !important;
+    line-height: 25px !important;
   }
 }/*# sourceMappingURL=main.css.map */
